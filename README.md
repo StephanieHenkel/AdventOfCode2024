@@ -16,20 +16,6 @@ Each day features a new challenge, with increasing complexity as the event progr
 
 ---
 
-## Repository Structure
-
-This repository is organized as follows:
-
-```
-.
-├── solutions
-│   ├── day01.py       # Solution code for Day 1
-│   ├── day02.py         # Notes and explanation for Day 1
-...
-└── README.md             # You're here!
-```
----
-
 ## Solutions
 
 | Day | Puzzle                                                                     | Solution                       | Status |
