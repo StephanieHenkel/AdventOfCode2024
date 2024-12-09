@@ -21,7 +21,7 @@ Each day features a new challenge, with increasing complexity as the event progr
 | Day | Puzzle                                                                     | Solution                       | Status |
 |-----|----------------------------------------------------------------------------|--------------------------------|--------|
 | 01  | [Historian Hysteria](https://adventofcode.com/2024/day/1) | [day01.py](solutions/day01.py) | ✅      |
-| 02  | 🌟                                                                         |                                | ✅      |
+| 02  | 🌟                                                                         |                                |       |
 | ... | ...                                                                        | ...                            | ...    |
 
 ---
