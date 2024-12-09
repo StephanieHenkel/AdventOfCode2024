@@ -1,4 +1,4 @@
-# Advent of Code 2024
+# ✨ Advent of Code 2024 ✨
 
 Welcome to my repository for **Advent of Code 2024**! 
 This is where I'll document my journey solving the daily 
