@@ -11,13 +11,13 @@ def load_data(input_data):
 
 
 def solve_puzzle_a(data):
-    diff = 0
+    total_distance = 0
     left_list = sorted(data[0])
     right_list = sorted(data[1])
     for l, r in zip(left_list, right_list):
-        diff += abs(l - r)
+        total_distance += abs(l - r)
 
-    return diff
+    return total_distance
 
 
 if __name__ == "__main__":
