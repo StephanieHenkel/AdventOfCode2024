@@ -23,11 +23,10 @@ def solve_puzzle_a(unusual_data):
 def safety_check(report):
     differences = [report[i + 1] - report[i] for i in range(len(report) - 1)]
 
-    for diff in differences:
-        if diff < -3 or diff == 0 or diff > 3:
-            return False
-
-    return True
+    if all([diff in range(-3, 0) for diff in differences]) or all([diff in range(1, 4) for diff in differences]):
+        return True
+    else:
+        return False
 
 
 def solve_puzzle_b(unusual_data):
