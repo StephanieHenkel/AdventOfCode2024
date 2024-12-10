@@ -18,11 +18,12 @@ Each day features a new challenge, with increasing complexity as the event progr
 
 ## Solutions
 
-| Day | Puzzle                                                    | Solution                       | Status (5/50) |
+| Day | Puzzle                                                    | Solution                       | Status (6/50) |
 |-----|-----------------------------------------------------------|--------------------------------|---------------|
 | 01  | [Historian Hysteria](https://adventofcode.com/2024/day/1) | [day01.py](solutions/day01.py) | ⭐️ ⭐          |
 | 02  | [Red-Nosed Reports](https://adventofcode.com/2024/day/2)  | [day02.py](solutions/day02.py) | ⭐ ⭐           |
-| 03  | [Mull It Over](https://adventofcode.com/2024/day/3)  | [day03.py](solutions/day03.py) | ⭐ ☆           |
+| 03  | [Mull It Over](https://adventofcode.com/2024/day/3)       | [day03.py](solutions/day03.py) | ⭐ ⭐           |
+| 04  | [Ceres Search](https://adventofcode.com/2024/day/4)       | [day04.py](solutions/day04.py) |☆ ☆           |
 | ... | ...                                                       | ...                            | ☆ ☆           |
 
 ---
