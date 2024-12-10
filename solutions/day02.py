@@ -59,5 +59,5 @@ if __name__ == "__main__":
 
     # solve and submit puzzle b
     answer_b = solve_puzzle_b(unusual_data)
-    print("Similarity Score: ", answer_b)
+    print(f"Number of Safe Reports: {answer_b}/{len(unusual_data)}")
     puzzle.answer_b = answer_b
