@@ -14,7 +14,7 @@ def solve_puzzle_a(unusual_data):
 
     for report in unusual_data:
 
-        if safety_check(report):
+        if safety_check(report)[0]:
             safe_reports += 1
 
     return safe_reports
@@ -24,18 +24,25 @@ def safety_check(report):
     differences = [report[i + 1] - report[i] for i in range(len(report) - 1)]
 
     if all([diff in range(-3, 0) for diff in differences]) or all([diff in range(1, 4) for diff in differences]):
-        return True
+        return True, None
     else:
-        return False
+        return False, differences
 
 
 def solve_puzzle_b(unusual_data):
-    #tbd
     safe_reports = 0
 
     for report in unusual_data:
-        if safety_check(report):
+        safe, differences = safety_check(report)
+        if safe:
             safe_reports += 1
+        else:
+            for i in range(len(report)):
+                safe, differences = safety_check(report[:i] + report[i + 1: ])
+                if safe:
+                    safe_reports += 1
+                    break
+
 
     return safe_reports
 
@@ -53,4 +60,4 @@ if __name__ == "__main__":
     # solve and submit puzzle b
     answer_b = solve_puzzle_b(unusual_data)
     print("Similarity Score: ", answer_b)
-    # puzzle.answer_b = answer_b
+    puzzle.answer_b = answer_b
