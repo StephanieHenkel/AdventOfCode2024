@@ -24,7 +24,7 @@ Each day features a new challenge, with increasing complexity as the event progr
 | 02  | [Red-Nosed Reports](https://adventofcode.com/2024/day/2) | [day02.py](solutions/day02.py) | ⭐ ⭐           |
 | 03  | [Mull It Over](https://adventofcode.com/2024/day/3)     | [day03.py](solutions/day03.py) | ⭐ ⭐           |
 | 04  | [Ceres Search](https://adventofcode.com/2024/day/4)     | [day04.py](solutions/day04.py) | ⭐ ⭐           |
-| 04  | [Print Queue](https://adventofcode.com/2024/day/5) | [day05.py](solutions/day05.py) | ☆ ☆           |
+| 05  | [Print Queue](https://adventofcode.com/2024/day/5) | [day05.py](solutions/day05.py) | ☆ ☆           |
 | ... | ...                                                     | ...                            | ☆ ☆           |
 
 ---
