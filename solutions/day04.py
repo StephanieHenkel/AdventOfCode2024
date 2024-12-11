@@ -53,8 +53,7 @@ def in_boundaries(words, i, j):
 
 
 def move(words, i, j, match_word="XMAS", direction=go_up):
-    count = 1
-    i, j = direction(i, j)
+    count = 0
 
     while in_boundaries(words, i, j) and count < len(match_word):
         if words[i][j] != match_word[count]:
@@ -69,14 +68,35 @@ def move(words, i, j, match_word="XMAS", direction=go_up):
         return 0
 
 
-def solve_puzzle_b(left_list, right_list):
-    # TBD
-    return
+def solve_puzzle_b(words):
+    total_count = 0
 
+    for i in range(len(words[0])):
+        for j in range(len(words)):
+            if words[i][j] == "M":
+                # search for M1 left up
+                first_mas = move(words, i, j, match_word="MAS", direction=lambda i, j: go_right(*go_down(i, j)))
+                if first_mas == 1:
+                    # M2 left down
+                    second_mas = move(words, i+2, j, match_word="MAS", direction=lambda i, j: go_right(*go_up(i, j)))
+                    if second_mas == 0:
+                        # M2 right up
+                        second_mas = move(words, i, j+2, match_word="MAS", direction=lambda i, j: go_left(*go_down(i, j)))
 
-def print_words(words):
-    for line in words:
-        print(line)
+                    total_count += second_mas
+
+                # search for M1 right down
+                first_mas = move(words, i, j, match_word="MAS", direction=lambda i, j: go_left(*go_up(i, j)))
+                if first_mas == 1:
+                    # M2 left down
+                    second_mas = move(words, i, j-2, match_word="MAS", direction=lambda i, j: go_right(*go_up(i, j)))
+                    if second_mas == 0:
+                        # M2 right up
+                        second_mas = move(words, i-2, j, match_word="MAS", direction=lambda i, j: go_left(*go_down(i, j)))
+
+                    total_count += second_mas
+
+    return total_count
 
 
 if __name__ == "__main__":
@@ -90,6 +110,6 @@ if __name__ == "__main__":
     puzzle.answer_a = answer_a
 
     # solve and submit puzzle b
-    # answer_b = solve_puzzle_b(tbd)
-    # print("TBD: ", answer_b)
-    # puzzle.answer_b = answer_b
+    answer_b = solve_puzzle_b(words)
+    print("X-MAS count: ", answer_b)
+    puzzle.answer_b = answer_b
