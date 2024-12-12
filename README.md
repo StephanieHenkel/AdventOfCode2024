@@ -18,14 +18,15 @@ Each day features a new challenge, with increasing complexity as the event progr
 
 ## Solutions
 
-| Day | Puzzle                                                  | Solution                       | Status (9/50) |
-|-----|---------------------------------------------------------|--------------------------------|---------------|
-| 01  | [Historian Hysteria](https://adventofcode.com/2024/day/1) | [day01.py](solutions/day01.py) | ⭐️ ⭐          |
-| 02  | [Red-Nosed Reports](https://adventofcode.com/2024/day/2) | [day02.py](solutions/day02.py) | ⭐ ⭐           |
-| 03  | [Mull It Over](https://adventofcode.com/2024/day/3)     | [day03.py](solutions/day03.py) | ⭐ ⭐           |
-| 04  | [Ceres Search](https://adventofcode.com/2024/day/4)     | [day04.py](solutions/day04.py) | ⭐ ⭐           |
-| 05  | [Print Queue](https://adventofcode.com/2024/day/5) | [day05.py](solutions/day05.py) | ⭐☆           |
-| ... | ...                                                     | ...                            | ☆ ☆           |
+| Day | Puzzle                                                    | Solution                       | Status (10/50) |
+|-----|-----------------------------------------------------------|--------------------------------|----------------|
+| 01  | [Historian Hysteria](https://adventofcode.com/2024/day/1) | [day01.py](solutions/day01.py) | ⭐️⭐           |
+| 02  | [Red-Nosed Reports](https://adventofcode.com/2024/day/2)  | [day02.py](solutions/day02.py) | ⭐⭐           |
+| 03  | [Mull It Over](https://adventofcode.com/2024/day/3)       | [day03.py](solutions/day03.py) | ⭐⭐           |
+| 04  | [Ceres Search](https://adventofcode.com/2024/day/4)       | [day04.py](solutions/day04.py) | ⭐⭐           |
+| 05  | [Print Queue](https://adventofcode.com/2024/day/5)        | [day05.py](solutions/day05.py) | ⭐⭐           |
+| 06  | [Guard Gallivant](https://adventofcode.com/2024/day/6)    | [day06.py](solutions/day06.py) | ☆ ☆            |
+| ... | ...                                                       | ...                            | ☆ ☆            |
 
 ---
 
